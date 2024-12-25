@@ -1,0 +1,12 @@
+# notepad $PROFILE
+# ou crie o arquivo
+
+# pip install -r .\requirements.txt
+
+.\venv\Scripts\activate
+pip list
+python -c "import sys; print(sys.prefix)"
+
+python -m test_notion
+python -m src.tests.database_validator
+python -m src.tests.test_admin
